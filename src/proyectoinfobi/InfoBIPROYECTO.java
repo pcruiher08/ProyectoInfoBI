@@ -120,7 +120,6 @@ columnas.add(new String[2]);
         jComboBox5 = new javax.swing.JComboBox<>();
         jComboBox6 = new javax.swing.JComboBox<>();
         jComboBox7 = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jSeparator4 = new javax.swing.JSeparator();
@@ -138,6 +137,7 @@ columnas.add(new String[2]);
         jSpinner3 = new javax.swing.JSpinner();
         jSpinner4 = new javax.swing.JSpinner();
         jSpinner5 = new javax.swing.JSpinner();
+        jButton1 = new javax.swing.JButton();
 
         jFormattedTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -409,13 +409,6 @@ columnas.add(new String[2]);
             }
         });
 
-        jButton1.setText("Cerrar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
         jButton7.setText("Agregar resultados a base de datos");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -444,67 +437,58 @@ columnas.add(new String[2]);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(16, 16, 16)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1))
+                        .addGap(107, 107, 107)
+                        .addComponent(jRadioButton5))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(107, 107, 107)
-                                .addComponent(jRadioButton5))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(59, 59, 59)
-                                .addComponent(jLabel5)
-                                .addGap(71, 71, 71)
-                                .addComponent(jLabel7)
-                                .addGap(65, 65, 65)
-                                .addComponent(jLabel6))
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGap(59, 59, 59)
+                        .addComponent(jLabel5)
+                        .addGap(71, 71, 71)
+                        .addComponent(jLabel7)
+                        .addGap(65, 65, 65)
+                        .addComponent(jLabel6))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(37, 37, 37)
+                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(6, 6, 6)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jRadioButton2)
+                                        .addComponent(jRadioButton1))))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(37, 37, 37)
-                                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                            .addGap(6, 6, 6)
-                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jRadioButton2)
-                                                .addComponent(jRadioButton1))))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                            .addGap(6, 6, 6)
-                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jRadioButton4)
-                                                .addComponent(jRadioButton3)))))))
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(52, 52, 52)
-                                .addComponent(jButton11)))
-                        .addGap(0, 82, Short.MAX_VALUE)))
-                .addContainerGap())
+                                    .addGap(6, 6, 6)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jRadioButton4)
+                                        .addComponent(jRadioButton3)))))))
+                .addGap(18, 18, 18)
+                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(52, 52, 52)
+                        .addComponent(jButton11)))
+                .addContainerGap(88, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton1))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -621,6 +605,13 @@ columnas.add(new String[2]);
 
         jLabel15.setText("PE");
 
+        jButton1.setText("Cerrar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -628,6 +619,8 @@ columnas.add(new String[2]);
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(51, 51, 51)
+                .addComponent(jButton1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -737,9 +730,15 @@ columnas.add(new String[2]);
                             .addComponent(jLabel4)
                             .addComponent(jLabel8)))
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton1)
+                        .addGap(83, 83, 83))))
         );
 
         pack();
@@ -820,7 +819,7 @@ b=(String) jComboBox3.getSelectedItem();
 c=(String) jComboBox4.getSelectedItem();
 x=(String) jComboBox5.getSelectedItem();
 y=(String) jComboBox6.getSelectedItem();
-z=(String) jComboBox7.getSelectedItem();// introducir abajo
+z=(String) jComboBox7.getSelectedItem();
     int partidos1=0;
     int partidos2=0;
     int partidos3=0;
@@ -892,6 +891,31 @@ z=(String) jComboBox7.getSelectedItem();// introducir abajo
             jTable1.setValueAt(""+ partidos11,jComboBox5.getSelectedIndex(),3);
             jTable1.setValueAt(""+ partidos12,jComboBox6.getSelectedIndex(),3);
             jTable1.setValueAt(""+ partidos13,jComboBox7.getSelectedIndex(),4);
+        }else if(jRadioButton5.isSelected()){
+            partidos1 = (Integer.parseInt((String)jTable1.getValueAt(jComboBox2.getSelectedIndex(), 2)))+1;
+            partidos2 = (Integer.parseInt((String)jTable1.getValueAt(jComboBox3.getSelectedIndex(), 2)))+1;
+            partidos3 = (Integer.parseInt((String)jTable1.getValueAt(jComboBox4.getSelectedIndex(), 2)))+1;
+            partidos5 = (Integer.parseInt((String)jTable1.getValueAt(jComboBox5.getSelectedIndex(), 2)))+1;
+            partidos6 = (Integer.parseInt((String)jTable1.getValueAt(jComboBox6.getSelectedIndex(), 2)))+1;
+            partidos7 = (Integer.parseInt((String)jTable1.getValueAt(jComboBox7.getSelectedIndex(), 2)))+1; 
+            partidos8 = (Integer.parseInt((String)jTable1.getValueAt(jComboBox2.getSelectedIndex(), 2)))+1;
+            partidos9 = (Integer.parseInt((String)jTable1.getValueAt(jComboBox3.getSelectedIndex(), 2)))+1; 
+            partidos10 = (Integer.parseInt((String)jTable1.getValueAt(jComboBox4.getSelectedIndex(), 2)))+1;
+            partidos11 = ((Integer.parseInt((String)jTable1.getValueAt(jComboBox5.getSelectedIndex(), 2)))-1);
+            partidos12 = ((Integer.parseInt((String)jTable1.getValueAt(jComboBox6.getSelectedIndex(), 2)))-1); 
+            partidos13 = ((Integer.parseInt((String)jTable1.getValueAt(jComboBox7.getSelectedIndex(), 2)))-1);
+            jTable1.setValueAt(""+ partidos1,jComboBox2.getSelectedIndex(),2);
+            jTable1.setValueAt(""+ partidos2,jComboBox3.getSelectedIndex(),2);
+            jTable1.setValueAt(""+ partidos3,jComboBox4.getSelectedIndex(),2);
+            jTable1.setValueAt(""+ partidos5,jComboBox5.getSelectedIndex(),2);
+            jTable1.setValueAt(""+ partidos6,jComboBox6.getSelectedIndex(),2);
+            jTable1.setValueAt(""+ partidos7,jComboBox7.getSelectedIndex(),2);
+            jTable1.setValueAt(""+ partidos8,jComboBox2.getSelectedIndex(),5);
+            jTable1.setValueAt(""+ partidos9,jComboBox3.getSelectedIndex(),5);
+            jTable1.setValueAt(""+ partidos10,jComboBox4.getSelectedIndex(),5);
+            jTable1.setValueAt(""+ partidos11,jComboBox5.getSelectedIndex(),5);
+            jTable1.setValueAt(""+ partidos12,jComboBox6.getSelectedIndex(),5);
+            jTable1.setValueAt(""+ partidos13,jComboBox7.getSelectedIndex(),5);            
         }
         
         
@@ -1022,55 +1046,10 @@ jDialog3.setVisible(false);
 
     String[] f = new String[99];
    
-        void leeArchivoPorFila(String[] string, String[] f){
-        columnos.add(new String[99]);
-      // columnas.add(new ArrayList<>());
-
-    InputStream ExcelFileToRead = null;
-    try {
-        ExcelFileToRead = new FileInputStream("Prueba.xls");
-    } catch (FileNotFoundException ex) {
-        Logger.getLogger(InfoBIPROYECTO.class.getName()).log(Level.SEVERE, null, ex);
-    }
-		HSSFWorkbook wb = null;
-    try {
-        wb = new HSSFWorkbook(ExcelFileToRead);
-    } catch (IOException ex) {
-        Logger.getLogger(InfoBIPROYECTO.class.getName()).log(Level.SEVERE, null, ex);
-    }
-
-		HSSFSheet sheet=wb.getSheetAt(0);
-		HSSFRow row; 
-		HSSFCell cell;
-
-		Iterator rows = sheet.rowIterator();
-                //String[] f = new String[6];
-        int rowStart = Math.min(1, sheet.getFirstRowNum()); // 0 based not 1 based rows
-        int rowEnd = Math.max(1, sheet.getLastRowNum());
-
-        for (int rowNum = rowStart; rowNum < rowEnd; rowNum++) {
-           Row r = sheet.getRow(rowNum);
-                    int MY_MINIMUM_COLUMN_COUNT = 0;
-
-           int lastColumn = Math.max(r.getLastCellNum(), MY_MINIMUM_COLUMN_COUNT);
-
-           for (int cn = 0; cn < lastColumn; cn++) {
-              Cell c = r.getCell(cn, Row.RETURN_BLANK_AS_NULL);
-              if (c == null) {
-                 // The spreadsheet is empty in this cell
-              } else {
-                 // Do something useful with the cell's contents
-                 System.out.println(r.getCell(cn));
-              }
-           }
-        }
-
-               
-    }
+        
     
     void leeArchivo(String[] string, String[] f){
         columnos.add(new String[99]);
-      // columnas.add(new ArrayList<>());
 
     InputStream ExcelFileToRead = null;
     try {
@@ -1090,7 +1069,7 @@ jDialog3.setVisible(false);
 		HSSFCell cell;
 
 		Iterator rows = sheet.rowIterator();
-                //String[] f = new String[6];
+                
 
 		while (rows.hasNext())
 		{
