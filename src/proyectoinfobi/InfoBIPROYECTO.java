@@ -53,16 +53,10 @@ ArrayList<String> PJ = new ArrayList<>();
 ArrayList<String> PG = new ArrayList<>();
 ArrayList<String> PP = new ArrayList<>();
 ArrayList<String> PE = new ArrayList<>();
-
-//List<List<String>> columnas = new ArrayList<List<String>>();
 ArrayList<ArrayList<String>> columnas = new ArrayList<ArrayList<String>>();
+ArrayList<String[]> columnos = new ArrayList<String[]>();
 
-   ArrayList<String[]> columnos = new ArrayList<String[]>();
-   /*
-columnas.add(new String[2]);
-     * Creates new form InfoBIPROYECTO
-     */
-    public InfoBIPROYECTO() {
+public InfoBIPROYECTO() {
         
         initComponents();
     }
@@ -1010,7 +1004,7 @@ jDialog3.setVisible(false);
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // TODO add your handling code here:
-        //leeArchivoPorFila(new String[99], f);
+  
         jDialog4.pack();
         jDialog4.setVisible(true);
     }//GEN-LAST:event_jButton11ActionPerformed
@@ -1045,9 +1039,6 @@ jDialog3.setVisible(false);
      */
 
     String[] f = new String[99];
-   
-        
-    
     void leeArchivo(String[] string, String[] f){
         columnos.add(new String[99]);
 
@@ -1148,9 +1139,13 @@ jDialog3.setVisible(false);
         }else if(y==1){
             ventanaDeError();
         }else{
-            textArea1.append(nombreDeEquipo + " "+ numeroDeEquipo +" "+ (int)jSpinner2.getValue()+" "+ (int)jSpinner3.getValue()+" "+ jSpinner4.getValue()+" "+jSpinner5.getValue()+" "+ "\n");
-           // equipos.add(nombreDeEquipo);
-            //numeros.add(""+numeroDeEquipo);
+            textArea1.append(nombreDeEquipo + " "+ 
+                    numeroDeEquipo +" "+ 
+                    (int)jSpinner2.getValue()+" "+ 
+                    (int)jSpinner3.getValue()+" "+ 
+                    jSpinner4.getValue()+" "+
+                    jSpinner5.getValue()+" "+ "\n");
+            
             PJ.add(""+jSpinner2.getValue());
             PG.add(""+jSpinner3.getValue());    
             PP.add(""+jSpinner4.getValue());
@@ -1173,9 +1168,7 @@ jDialog3.setVisible(false);
     
     void ventanaDeError(){
          JOptionPane.showMessageDialog(null, "Revisar datos de ingreso");    
-//            jDialog1.pack();
-//            jDialog1.setVisible(true);
-//            jFormattedTextField1.setText("Revisar datos del equipo");
+
     }
     
 
@@ -1208,7 +1201,6 @@ jDialog3.setVisible(false);
             new InfoBIPROYECTO().setVisible(true);
         });
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
